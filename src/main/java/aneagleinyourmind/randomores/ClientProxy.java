@@ -1,4 +1,4 @@
-package com.myname.mymodid;
+package aneagleinyourmind.randomores;
 
 public class ClientProxy extends CommonProxy {
 
