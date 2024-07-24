@@ -21,9 +21,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class RandomOreBlock extends Block {
-
-    @SideOnly(Side.CLIENT)
-    private static final String[] TEXTURE_NAMES = { "random_ore_0", "random_ore_1" };
     @SideOnly(Side.CLIENT)
     private IIcon[] ore_icons;
 
@@ -45,10 +42,10 @@ public class RandomOreBlock extends Block {
     @Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister register) {
-        ore_icons = new IIcon[TEXTURE_NAMES.length];
+        ore_icons = new IIcon[2];
 
-        ore_icons[0] = register.registerIcon(RandomOres.RESOURCE_ID + TEXTURE_NAMES[0]);
-        ore_icons[1] = register.registerIcon(RandomOres.RESOURCE_ID + TEXTURE_NAMES[1]);
+        ore_icons[0] = register.registerIcon(RandomOres.RESOURCE_ID + "random_ore_0");
+        ore_icons[1] = register.registerIcon(RandomOres.RESOURCE_ID + "random_ore_1");
     }
 
     @Override
