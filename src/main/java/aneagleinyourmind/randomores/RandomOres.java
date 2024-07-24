@@ -14,9 +14,11 @@ import cpw.mods.fml.common.event.FMLServerStartingEvent;
 public class RandomOres {
 
     public static final String MODID = "randomores";
+    public static final String RESOURCE_ID = MODID + ":";
     public static final Logger LOG = LogManager.getLogger(MODID);
-
-    @SidedProxy(clientSide = "aneagleinyourmind.randomores.ClientProxy", serverSide = "aneagleinyourmind.randomores.CommonProxy")
+    @SidedProxy(
+        clientSide = "aneagleinyourmind.randomores.ClientProxy",
+        serverSide = "aneagleinyourmind.randomores.CommonProxy")
     public static CommonProxy proxy;
 
     @Mod.EventHandler
