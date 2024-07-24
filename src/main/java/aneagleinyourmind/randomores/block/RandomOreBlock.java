@@ -21,6 +21,7 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class RandomOreBlock extends Block {
+
     @SideOnly(Side.CLIENT)
     private IIcon[] ore_icons;
 
